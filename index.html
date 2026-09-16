@@ -1,0 +1,622 @@
+<html style="margin:0;padding:0;">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+(function(){
+  var s = document.createElement('style');
+  s.textContent = ':root{--bg:#f6fbf9;--card:#ffffff;--text:#0f172a;--muted:#64748b;--accent:#0d9488;--accent-soft:rgba(13,148,136,.14);--accent2:#c4693d;--accent2-soft:rgba(196,105,61,.14);--border:rgba(15,23,42,.07)}.reveal{opacity:0;transform:translateY(20px);animation:fadeUp .6s ease forwards}.reveal:nth-child(2){animation-delay:.1s}.reveal:nth-child(3){animation-delay:.2s}.reveal:nth-child(4){animation-delay:.3s}.reveal:nth-child(5){animation-delay:.4s}.reveal:nth-child(6){animation-delay:.5s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}.service-card{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.service-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 12px 40px rgba(13,148,136,.12)}.nav-link{position:relative}.nav-link::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--accent);transition:width .25s ease}.nav-link:hover::after{width:100%}.btn-primary{background:var(--accent);color:#fff;font-weight:600;padding:12px 28px;border-radius:10px;transition:all .2s ease;display:inline-flex;align-items:center;gap:8px}.btn-primary:hover{background:#0b7a70;transform:translateY(-1px);box-shadow:0 6px 20px rgba(13,148,136,.25)}.btn-secondary{background:var(--card);color:var(--text);font-weight:600;padding:12px 28px;border-radius:10px;border:1px solid var(--border);transition:all .2s ease;display:inline-flex;align-items:center;gap:8px}.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}.gradient-text{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.status-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;background:var(--accent-soft);color:var(--accent);font-size:13px;font-weight:600;border:1px solid rgba(13,148,136,.25)}.input-field{width:100%;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);font-size:15px;transition:border-color .2s ease,box-shadow .2s ease}.input-field:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}.hero-bg{background:radial-gradient(800px 400px at 80% -10%, var(--accent-soft), transparent 60%),radial-gradient(600px 300px at 10% 10%, var(--accent2-soft), transparent 60%),var(--bg)}';
+  document.head.appendChild(s);
+})();
+</script>
+<div style="background-color:transparent;box-sizing:border-box;">
+  <div style="color:var(--text);font-family:'DM Sans',sans-serif;background:var(--bg)">
+    
+    <!-- Navigation -->
+    <nav class="reveal" style="position:sticky;top:0;z-index:50;background:rgba(246,251,249,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)">
+      <div class="max-w-6xl mx-auto px-6 py-4" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px">SPX</div>
+          <div>
+            <div style="font-weight:700;font-size:16px;color:var(--text)">SPX Express Sentolo</div>
+            <div style="font-size:12px;color:var(--muted)">Kab. Kulonprogo, Yogyakarta</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
+          <a href="#tentang" class="nav-link" style="color:var(--text);font-size:14px;font-weight:500;text-decoration:none">Tentang</a>
+          <a href="#layanan" class="nav-link" style="color:var(--text);font-size:14px;font-weight:500;text-decoration:none">Layanan</a>
+          <a href="#lokasi" class="nav-link" style="color:var(--text);font-size:14px;font-weight:500;text-decoration:none">Lokasi</a>
+          <a href="#jadwal" class="nav-link" style="color:var(--text);font-size:14px;font-weight:500;text-decoration:none">Jadwal</a>
+          <a href="#kontak" class="nav-link" style="color:var(--text);font-size:14px;font-weight:500;text-decoration:none">Kontak</a>
+          <a href="#lapor" class="btn-primary" style="text-decoration:none;font-size:14px;padding:10px 20px">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="reveal hero-bg" style="padding:80px 24px 60px">
+      <div class="max-w-6xl mx-auto">
+        <div style="display:grid;grid-template-columns:1fr;gap:48px;align-items:center">
+          <div style="text-align:center">
+            <div class="status-pill" style="margin-bottom:20px">
+              <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;animation:pulse 2s infinite"></span>
+              Peringkat #1 Pencarian SPX Sentolo
+            </div>
+            <h1 style="font-size:44px;font-weight:700;line-height:1.15;margin-bottom:16px;color:var(--text);letter-spacing:-0.02em">
+              SPX Express Sentolo<br>
+              <span class="gradient-text">0818-655-447 | Kab. Kulonprogo</span>
+            </h1>
+            <p style="font-size:18px;color:var(--muted);max-width:640px;margin:0 auto 32px;line-height:1.7">
+              Mitra ekspedisi terpercaya di Sentolo, Kulonprogo. Layanan pengiriman cepat, aman, dan terjangkau untuk seluruh wilayah Indonesia.
+            </p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+              <a href="https://wa.me/62818655447" target="_blank" class="btn-primary" style="text-decoration:none">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Chat WhatsApp Sekarang
+              </a>
+              <a href="tel:0818655447" class="btn-secondary" style="text-decoration:none">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Telepon: 0818-655-447
+              </a>
+            </div>
+          </div>
+          
+          <!-- Hero Image -->
+          <div style="max-width:700px;margin:0 auto">
+            <div style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.12);border:1px solid var(--border)">
+              <img 
+                src="https://p16-flow-image-sign.ibyteimg.com/tos-mya-i-uo7y4d541q/rc_vlm/075c4dec7f03468f84f9a56a45ffb53c~tplv-0es2k971ck-image.image?rcl=202609161828417BF6807B40BDEFA8CEAC&rk3s=8e244e95&rrcfp=935dee89&x-expires=1790159322&x-signature=NBx32AJ8Q9fo4Lu1gq7IOdTfbYY%3D" 
+                alt="SPX Express Sentolo - Gudang dan Layanan Ekspedisi di Kulonprogo"
+                loading="lazy"
+                onerror="this.style.display='none'"
+                style="width:100%;height:auto;display:block"
+              >
+              <div style="position:absolute;bottom:16px;left:16px;right:16px;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);padding:14px 20px;border-radius:10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+                <div>
+                  <div style="font-weight:700;color:var(--text);font-size:15px">Gudang SPX Sentolo</div>
+                  <div style="font-size:13px;color:var(--muted)">Sentolo, Kabupaten Kulonprogo, DIY</div>
+                </div>
+                <div style="display:flex;gap:8px">
+                  <span style="padding:4px 12px;background:var(--accent-soft);color:var(--accent);border-radius:20px;font-size:12px;font-weight:600">Buka</span>
+                  <span style="padding:4px 12px;background:var(--accent2-soft);color:var(--accent2);border-radius:20px;font-size:12px;font-weight:600">Cepat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:48px">
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center">
+            <div style="font-size:32px;font-weight:700;color:var(--accent)">5.000+</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:4px">Paket Terkirim</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center">
+            <div style="font-size:32px;font-weight:700;color:var(--accent2)">24 Jam</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:4px">Layanan Responsif</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center">
+            <div style="font-size:32px;font-weight:700;color:var(--accent)">100%</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:4px">Keamanan Terjamin</div>
+          </div>
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center">
+            <div style="font-size:32px;font-weight:700;color:var(--accent2)">#1</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:4px">Pencarian SPX Lendah</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang SPX Sentolo -->
+    <section id="tentang" class="reveal" style="padding:80px 24px;background:var(--card)">
+      <div class="max-w-6xl mx-auto">
+        <div style="text-align:center;margin-bottom:48px">
+          <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px">Tentang Kami</div>
+          <h2 style="font-size:32px;font-weight:700;color:var(--text);margin-bottom:12px">SPX Express Sentolo</h2>
+          <p style="color:var(--muted);max-width:600px;margin:0 auto;line-height:1.7">
+            Mitra ekspedisi terpercaya yang melayani wilayah Sentolo, Lendah, dan seluruh Kabupaten Kulonprogo
+          </p>
+        </div>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;align-items:start">
+          <div>
+            <h3 style="font-size:20px;font-weight:700;color:var(--text);margin-bottom:16px">Profil SPX Sentolo</h3>
+            <p style="color:var(--muted);line-height:1.8;margin-bottom:16px">
+              <strong>SPX Express Sentolo</strong> adalah agen resmi layanan ekspedisi SPX Express yang berlokasi strategis di Kecamatan Sentolo, Kabupaten Kulonprogo, Daerah Istimewa Yogyakarta. Kami hadir untuk memenuhi kebutuhan pengiriman paket dan dokumen bagi masyarakat serta pelaku usaha di wilayah Sentolo, Lendah, dan sekitarnya.
+            </p>
+            <p style="color:var(--muted);line-height:1.8;margin-bottom:16px">
+              Dengan <strong>nomor WhatsApp resmi 0818-655-447</strong>, kami siap melayani konsultasi, pemesanan pick-up, dan pelacakan paket secara real-time. Tim kurir profesional kami siap menjemput paket Anda langsung dari lokasi.
+            </p>
+            <p style="color:var(--muted);line-height:1.8">
+              <strong>SPX Lendah</strong> dan <strong>SPX Sentolo</strong> menjadi kata kunci pencarian terpopuler bagi warga Kulonprogo yang membutuhkan layanan ekspedisi cepat dan terpercaya. Kami bangga menjadi pilihan utama masyarakat.
+            </p>
+          </div>
+          
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <h3 style="font-size:20px;font-weight:700;color:var(--text);margin-bottom:20px">Keunggulan Kami</h3>
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div style="display:flex;gap:14px;align-items:flex-start">
+                <div style="width:36px;height:36px;border-radius:8px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div>
+                  <div style="font-weight:600;color:var(--text)">Pengiriman Cepat</div>
+                  <div style="font-size:14px;color:var(--muted);margin-top:2px">Proses cepat dengan estimasi waktu pengiriman yang akurat</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:flex-start">
+                <div style="width:36px;height:36px;border-radius:8px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);flex-shrink:0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <div style="font-weight:600;color:var(--text)">Keamanan Terjamin</div>
+                  <div style="font-size:14px;color:var(--muted);margin-top:2px">Setiap paket dilacak dan diasuransikan untuk keamanan maksimal</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:flex-start">
+                <div style="width:36px;height:36px;border-radius:8px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                  <div style="font-weight:600;color:var(--text)">Layanan 24/7</div>
+                  <div style="font-size:14px;color:var(--muted);margin-top:2px">Customer service siap membantu kapan saja via WhatsApp</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:14px;align-items:flex-start">
+                <div style="width:36px;height:36px;border-radius:8px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);flex-shrink:0">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div>
+                  <div style="font-weight:600;color:var(--text)">Harga Terjangkau</div>
+                  <div style="font-size:14px;color:var(--muted);margin-top:2px">Tarif kompetitif dengan kualitas layanan premium</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="reveal" style="padding:80px 24px;background:var(--bg)">
+      <div class="max-w-6xl mx-auto">
+        <div style="text-align:center;margin-bottom:48px">
+          <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px">Layanan Kami</div>
+          <h2 style="font-size:32px;font-weight:700;color:var(--text);margin-bottom:12px">Layanan Lengkap SPX Sentolo</h2>
+          <p style="color:var(--muted);max-width:600px;margin:0 auto;line-height:1.7">
+            Dari gudang hingga kurir siap antar, kami menyediakan solusi pengiriman terintegrasi
+          </p>
+        </div>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+          <div class="service-card" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <div style="width:48px;height:48px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:18px">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px">Gudang SPX Sentolo</h3>
+            <p style="color:var(--muted);line-height:1.7;font-size:14px">
+              Fasilitas gudang yang luas, bersih, dan aman untuk penyimpanan paket sebelum pengiriman. Dilengkapi sistem manajemen inventaris modern.
+            </p>
+          </div>
+          
+          <div class="service-card" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <div style="width:48px;height:48px;border-radius:12px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:18px">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px">Kurir Sentolo</h3>
+            <p style="color:var(--muted);line-height:1.7;font-size:14px">
+              Tim kurir profesional yang berpengalaman menjemput dan mengantarkan paket ke seluruh wilayah Sentolo, Lendah, dan Kulonprogo dengan tepat waktu.
+            </p>
+          </div>
+          
+          <div class="service-card" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <div style="width:48px;height:48px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:18px">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px">Pick-Up & Delivery</h3>
+            <p style="color:var(--muted);line-height:1.7;font-size:14px">
+              Layanan penjemputan paket gratis dari lokasi Anda. Cukup hubungi WhatsApp kami, kurir akan segera tiba.
+            </p>
+          </div>
+          
+          <div class="service-card" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <div style="width:48px;height:48px;border-radius:12px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:18px">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px">WhatsApp SPX Sentolo</h3>
+            <p style="color:var(--muted);line-height:1.7;font-size:14px">
+              <strong>0818-655-447</strong> — Layanan pelanggan via WhatsApp untuk konsultasi tarif, pemesanan, dan pelacakan paket real-time.
+            </p>
+          </div>
+          
+          <div class="service-card" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <div style="width:48px;height:48px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:18px">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px">Lapor SPX Sentolo</h3>
+            <p style="color:var(--muted);line-height:1.7;font-size:14px">
+              Form pelaporan keluhan dan pengaduan yang responsif. Setiap laporan ditangani dengan cepat dan transparan oleh tim kami.
+            </p>
+          </div>
+          
+          <div class="service-card" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <div style="width:48px;height:48px;border-radius:12px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:18px">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <h3 style="font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px">Cek Resi & Tracking</h3>
+            <p style="color:var(--muted);line-height:1.7;font-size:14px">
+              Pantau perjalanan paket Anda secara real-time dengan nomor resi. Informasi status pengiriman selalu terupdate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi -->
+    <section id="lokasi" class="reveal" style="padding:80px 24px;background:var(--card)">
+      <div class="max-w-6xl mx-auto">
+        <div style="text-align:center;margin-bottom:48px">
+          <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px">Lokasi Kami</div>
+          <h2 style="font-size:32px;font-weight:700;color:var(--text);margin-bottom:12px">Lokasi SPX Sentolo</h2>
+          <p style="color:var(--muted);max-width:600px;margin:0 auto;line-height:1.7">
+            Berlokasi strategis di Kecamatan Sentolo, mudah dijangkau dari seluruh wilayah Kulonprogo
+          </p>
+        </div>
+        
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start">
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:32px">
+            <h3 style="font-size:20px;font-weight:700;color:var(--text);margin-bottom:20px">Alamat Lengkap</h3>
+            <div style="display:flex;flex-direction:column;gap:20px">
+              <div style="display:flex;gap:14px;align-items:flex-start">
+                <div style="width:40px;height:40px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div style="font-weight:600;color:var(--text);margin-bottom:4px">Alamat Gudang</div>
+                  <div style="color:var(--muted);line-height:1.6;font-size:14px">
+                    Jl. Raya Sentolo, Kecamatan Sentolo<br>
+                    Kabupaten Kulonprogo<br>
+                    Daerah Istimewa Yogyakarta 55653
+                  </div>
+                </div>
+              </div>
+              
+              <div style="display:flex;gap:14px;align-items:flex-start">
+                <div style="width:40px;height:40px;border-radius:10px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);flex-shrink:0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div style="font-weight:600;color:var(--text);margin-bottom:4px">Area Layanan</div>
+                  <div style="color:var(--muted);line-height:1.6;font-size:14px">
+                    Sentolo, Lendah, Galur, Lumbir,<br>
+                    Pengasih, Kokap, Wates, dan seluruh<br>
+                    wilayah Kabupaten Kulonprogo
+                  </div>
+                </div>
+              </div>
+              
+              <div style="display:flex;gap:14px;align-items:flex-start">
+                <div style="width:40px;height:40px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <div style="font-weight:600;color:var(--text);margin-bottom:4px">Jam Operasional</div>
+                  <div style="color:var(--muted);line-height:1.6;font-size:14px">
+                    Senin - Sabtu: 08:00 - 17:00 WIB<br>
+                    Minggu: 09:00 - 14:00 WIB<br>
+                    <span style="color:var(--accent);font-weight:600">WhatsApp 24 Jam</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--border)">
+              <a href="https://wa.me/62818655447" target="_blank" class="btn-primary" style="text-decoration:none;width:100%;justify-content:center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Minta Lokasi via WhatsApp
+              </a>
+            </div>
+          </div>
+          
+          <!-- Map Placeholder -->
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;min-height:400px;position:relative">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent-soft),var(--accent2-soft));padding:32px;text-align:center">
+              <div style="width:80px;height:80px;border-radius:50%;background:var(--card);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px;box-shadow:0 8px 30px rgba(13,148,136,.2)">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3 style="font-size:22px;font-weight:700;color:var(--text);margin-bottom:8px">SPX Express Sentolo</h3>
+              <p style="color:var(--muted);margin-bottom:20px;line-height:1.6">Kecamatan Sentolo, Kabupaten Kulonprogo<br>Daerah Istimewa Yogyakarta</p>
+              <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+                <span style="padding:8px 16px;background:var(--card);border-radius:20px;font-size:13px;color:var(--accent);font-weight:600;border:1px solid rgba(13,148,136,.2)">📍 Sentolo</span>
+                <span style="padding:8px 16px;background:var(--card);border-radius:20px;font-size:13px;color:var(--accent2);font-weight:600;border:1px solid rgba(196,105,61,.2)">📍 Lendah</span>
+                <span style="padding:8px 16px;background:var(--card);border-radius:20px;font-size:13px;color:var(--accent);font-weight:600;border:1px solid rgba(13,148,136,.2)">📍 Wates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jadwal / Shipping -->
+    <section id="jadwal" class="reveal" style="padding:80px 24px;background:var(--bg)">
+      <div class="max-w-6xl mx-auto">
+        <div style="text-align:center;margin-bottom:48px">
+          <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px">Jadwal Pengiriman</div>
+          <h2 style="font-size:32px;font-weight:700;color:var(--text);margin-bottom:12px">Jadwal & Estimasi Pengiriman</h2>
+          <p style="color:var(--muted);max-width:600px;margin:0 auto;line-height:1.7">
+            Informasi jadwal keberangkatan paket dan estimasi waktu sampai tujuan
+          </p>
+        </div>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;border-top:3px solid var(--accent)">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <h3 style="font-size:18px;font-weight:700;color:var(--text)">Jadwal Harian</h3>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Senin - Jumat</span>
+                <span style="font-weight:600;color:var(--text)">2x Pengiriman</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Sabtu</span>
+                <span style="font-weight:600;color:var(--text)">1x Pengiriman</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Minggu</span>
+                <span style="font-weight:600;color:var(--accent)">Pick-up Saja</span>
+              </div>
+            </div>
+          </div>
+          
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;border-top:3px solid var(--accent2)">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <h3 style="font-size:18px;font-weight:700;color:var(--text)">Jam Keberangkatan</h3>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Keberangkatan 1</span>
+                <span style="font-weight:600;color:var(--text)">10:00 WIB</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Keberangkatan 2</span>
+                <span style="font-weight:600;color:var(--text)">15:00 WIB</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Batas Drop-off</span>
+                <span style="font-weight:600;color:var(--accent2)">14:30 WIB</span>
+              </div>
+            </div>
+          </div>
+          
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;border-top:3px solid var(--accent)">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              </div>
+              <h3 style="font-size:18px;font-weight:700;color:var(--text)">Estimasi Sampai</h3>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Dalam Kota</span>
+                <span style="font-weight:600;color:var(--text)">1 - 2 Hari</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Pulau Jawa</span>
+                <span style="font-weight:600;color:var(--text)">2 - 3 Hari</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:var(--bg);border-radius:8px">
+                <span style="color:var(--muted);font-size:14px">Luar Pulau</span>
+                <span style="font-weight:600;color:var(--accent)">3 - 5 Hari</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="reveal" style="padding:80px 24px;background:var(--card)">
+      <div class="max-w-6xl mx-auto">
+        <div style="text-align:center;margin-bottom:48px">
+          <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px">Hubungi Kami</div>
+          <h2 style="font-size:32px;font-weight:700;color:var(--text);margin-bottom:12px">Kontak SPX Sentolo</h2>
+          <p style="color:var(--muted);max-width:600px;margin:0 auto;line-height:1.7">
+            Hubungi kami kapan saja untuk konsultasi, pemesanan, atau informasi lebih lanjut
+          </p>
+        </div>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:48px">
+          <a href="https://wa.me/62818655447" target="_blank" style="text-decoration:none;background:linear-gradient(135deg,#25D366,#128C7E);border-radius:14px;padding:28px;color:#fff;display:block;transition:transform .25s ease,box-shadow .25s ease" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 40px rgba(37,211,102,.3)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+              <div style="width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:13px;opacity:.9">WhatsApp Resmi</div>
+                <div style="font-size:20px;font-weight:700">0818-655-447</div>
+              </div>
+            </div>
+            <div style="font-size:14px;opacity:.9">Chat cepat, respon maksimal 5 menit</div>
+          </a>
+          
+          <a href="tel:0818655447" style="text-decoration:none;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px;color:var(--text);display:block;transition:transform .25s ease,border-color .25s ease" onmouseover="this.style.transform='translateY(-4px)';this.style.borderColor='var(--accent)'" onmouseout="this.style.transform='';this.style.borderColor='var(--border)'">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+              <div style="width:48px;height:48px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:13px;color:var(--muted)">Nomor Telepon</div>
+                <div style="font-size:20px;font-weight:700">0818-655-447</div>
+              </div>
+            </div>
+            <div style="font-size:14px;color:var(--muted)">Tersedia selama jam operasional</div>
+          </a>
+          
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:28px">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+              <div style="width:48px;height:48px;border-radius:12px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div style="font-size:13px;color:var(--muted)">Email</div>
+                <div style="font-size:16px;font-weight:700;color:var(--text)">spx.sentolo@gmail.com</div>
+              </div>
+            </div>
+            <div style="font-size:14px;color:var(--muted)">Untuk pertanyaan formal dan dokumentasi</div>
+          </div>
+        </div>
+        
+        <!-- Form Lapor -->
+        <div id="lapor" style="background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:40px;max-width:800px;margin:0 auto">
+          <div style="text-align:center;margin-bottom:28px">
+            <h3 style="font-size:24px;font-weight:700;color:var(--text);margin-bottom:8px">Form Lapor SPX Sentolo</h3>
+            <p style="color:var(--muted);font-size:14px">Sampaikan keluhan, saran, atau laporan Anda — kami akan merespon dengan cepat</p>
+          </div>
+          
+          <form onsubmit="event.preventDefault();alert('Terima kasih! Laporan Anda telah terkirim. Tim kami akan segera menghubungi Anda via WhatsApp.');" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div style="grid-column:span 1">
+              <label style="display:block;font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px">Nama Lengkap</label>
+              <input type="text" class="input-field" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div style="grid-column:span 1">
+              <label style="display:block;font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px">Nomor WhatsApp</label>
+              <input type="tel" class="input-field" placeholder="08xx-xxxx-xxxx" required>
+            </div>
+            <div style="grid-column:span 1">
+              <label style="display:block;font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px">Nomor Resi (opsional)</label>
+              <input type="text" class="input-field" placeholder="Masukkan nomor resi">
+            </div>
+            <div style="grid-column:span 1">
+              <label style="display:block;font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px">Jenis Laporan</label>
+              <select class="input-field" required>
+                <option value="">Pilih jenis laporan</option>
+                <option>Keluhan Pengiriman</option>
+                <option>Pertanyaan Tarif</option>
+                <option>Permintaan Pick-up</option>
+                <option>Saran & Masukan</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div style="grid-column:span 2">
+              <label style="display:block;font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px">Pesan</label>
+              <textarea class="input-field" rows="4" placeholder="Tuliskan pesan Anda secara jelas..." required style="resize:vertical"></textarea>
+            </div>
+            <div style="grid-column:span 2;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+              <button type="submit" class="btn-primary" style="border:none;cursor:pointer;font-size:15px">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Kirim Laporan
+              </button>
+              <a href="https://wa.me/62818655447" target="_blank" class="btn-secondary" style="text-decoration:none;font-size:15px">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Chat Langsung WA
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO / Ranking Section -->
+    <section class="reveal" style="padding:60px 24px;background:linear-gradient(135deg,var(--accent),#087369);color:#fff">
+      <div class="max-w-6xl mx-auto text-center">
+        <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.8;font-weight:600;margin-bottom:12px">Peringkat Teratas</div>
+        <h2 style="font-size:32px;font-weight:700;margin-bottom:16px">#1 Pencarian SPX Sentolo & SPX Lendah</h2>
+        <p style="max-width:600px;margin:0 auto 24px;opacity:.9;line-height:1.7">
+          Website resmi SPX Express Sentolo adalah sumber informasi terpercaya dan terlengkap untuk layanan ekspedisi di wilayah Sentolo, Lendah, dan Kabupaten Kulonprogo.
+        </p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+          <span style="padding:8px 18px;background:rgba(255,255,255,.15);border-radius:20px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.25)">SPX Sentolo</span>
+          <span style="padding:8px 18px;background:rgba(255,255,255,.15);border-radius:20px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.25)">SPX Lendah</span>
+          <span style="padding:8px 18px;background:rgba(255,255,255,.15);border-radius:20px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.25)">SPX Kulonprogo</span>
+          <span style="padding:8px 18px;background:rgba(255,255,255,.15);border-radius:20px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.25)">Ekspedisi Sentolo</span>
+          <span style="padding:8px 18px;background:rgba(255,255,255,.15);border-radius:20px;font-size:14px;font-weight:600;border:1px solid rgba(255,255,255,.25)">Kurir Lendah</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#0f172a;color:#94a3b8;padding:60px 24px 32px">
+      <div class="max-w-6xl mx-auto">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px;margin-bottom:40px">
+          <div>
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+              <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px">SPX</div>
+              <div>
+                <div style="font-weight:700;font-size:16px;color:#fff">SPX Express Sentolo</div>
+                <div style="font-size:12px;color:#64748b">Kab. Kulonprogo, Yogyakarta</div>
+              </div>
+            </div>
+            <p style="font-size:14px;line-height:1.7;color:#94a3b8">
+              Mitra ekspedisi terpercaya di Sentolo, Kulonprogo. Layanan pengiriman cepat, aman, dan terjangkau untuk seluruh Indonesia.
+            </p>
+          </div>
+          
+          <div>
+            <h4 style="font-weight:700;color:#fff;margin-bottom:16px;font-size:15px">Layanan</h4>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+              <li><a href="#layanan" style="color:#94a3b8;text-decoration:none;font-size:14px;transition:color .2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#94a3b8'">Gudang SPX Sentolo</a></li>
+              <li><a href="#layanan" style="color:#94a3b8;text-decoration:none;font-size:14px;transition:color .2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#94a3b8'">Kurir Sentolo</a></li>
+              <li><a href="#lokasi" style="color:#94a3b8;text-decoration:none;font-size:14px;transition:color .2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#94a3b8'">Lokasi SPX Sentolo</a></li>
+              <li><a href="#jadwal" style="color:#94a3b8;text-decoration:none;font-size:14px;transition:color .2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#94a3b8'">Jadwal Pengiriman</a></li>
+              <li><a href="#lapor" style="color:#94a3b8;text-decoration:none;font-size:14px;transition:color .2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#94a3b8'">Lapor SPX Sentolo</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 style="font-weight:700;color:#fff;margin-bottom:16px;font-size:15px">Kontak</h4>
+            <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+              <li style="display:flex;align-items:center;gap:10px;font-size:14px">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent)"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                WhatsApp: 0818-655-447
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:14px">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent)"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Telepon: 0818-655-447
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:14px">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent)"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Sentolo, Kulonprogo, DIY
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:14px">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent)"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Senin-Sabtu: 08:00-17:00
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 style="font-weight:700;color:#fff;margin-bottom:16px;font-size:15px">Website</h4>
+            <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px;margin-bottom:12px">
+              <div style="font-size:12px;color:#64748b;margin-bottom:4px">Domain Resmi</div>
+              <div style="font-weight:600;color:#fff;font-size:15px">spx-sentolo.vercel.app</div>
+            </div>
+            <p style="font-size:13px;color:#64748b;line-height:1.6">
+              Website resmi SPX Express Sentolo — sumber informasi terlengkap dan terpercaya.
+            </p>
+          </div>
+        </div>
+        
+        <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+          <div style="font-size:13px;color:#64748b">
+            © 2026 SPX Express Sentolo. All rights reserved.
+          </div>
+          <div style="font-size:13px;color:#64748b">
+            spx express sentolo | 0818655447 | kab kulonprogo
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</div>
+</html>
+
